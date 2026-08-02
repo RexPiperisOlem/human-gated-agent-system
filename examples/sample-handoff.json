@@ -1,0 +1,37 @@
+{
+  "record_id": "DEMO-HANDOFF-0001",
+  "created_at": "2030-01-01T12:00:00Z",
+  "source_agent": "002",
+  "target_agent": "003",
+  "status": "READY",
+  "gate": "REVIEW",
+  "purpose": "Create one work order for a fictional neighborhood tool-sharing event guide.",
+  "inputs": [
+    {
+      "label": "Fictional intake card",
+      "reference": "examples/fictional-intake-card.md",
+      "required": true
+    }
+  ],
+  "output_contract": {
+    "primary_deliverable": "One work order for a two-page public event guide",
+    "acceptance_criteria": [
+      "One primary deliverable is named",
+      "Public facts requiring confirmation are listed",
+      "The work order stops before publication"
+    ]
+  },
+  "risks": ["UNSUPPORTED_CLAIM", "EXTERNAL_ACTION"],
+  "human_decision": {
+    "required": true,
+    "status": "PENDING",
+    "owner_role": "system owner",
+    "decision_note": "Confirm scope and supplied facts."
+  },
+  "provenance": ["DEMO-INTAKE-0001"],
+  "payload": {
+    "priority": "NORMAL",
+    "target_audience": "neighborhood residents"
+  }
+}
+

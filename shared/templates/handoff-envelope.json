@@ -1,0 +1,40 @@
+{
+  "record_id": "DEMO-HANDOFF-0001",
+  "created_at": "2030-01-01T12:00:00Z",
+  "source_agent": "002",
+  "target_agent": "003",
+  "status": "READY",
+  "gate": "REVIEW",
+  "purpose": "Convert a fictional event-guide intake card into one work order.",
+  "inputs": [
+    {
+      "label": "Fictional intake card",
+      "reference": "examples/fictional-intake-card.md",
+      "required": true
+    }
+  ],
+  "output_contract": {
+    "primary_deliverable": "One work order for a two-page event guide",
+    "acceptance_criteria": [
+      "Names one primary deliverable",
+      "Lists supplied and missing source material",
+      "Stops before publication"
+    ]
+  },
+  "risks": ["EXTERNAL_ACTION"],
+  "human_decision": {
+    "required": true,
+    "status": "PENDING",
+    "owner_role": "system owner",
+    "decision_note": "Confirm scope before drafting begins."
+  },
+  "provenance": [
+    "Fictional neighborhood tool-sharing event request",
+    "DEMO-INTAKE-0001"
+  ],
+  "payload": {
+    "priority": "NORMAL",
+    "target_audience": "neighborhood residents"
+  }
+}
+

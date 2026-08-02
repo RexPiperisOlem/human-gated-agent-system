@@ -1,0 +1,34 @@
+# Voice and Style Routing Record Template
+
+- Record ID:
+- Date:
+- Input source reference:
+- Requested operation: clean / compress / expand from known facts / draft / convert / check
+- Output surface:
+- Audience:
+- Public / private / internal:
+- Length target:
+- Primary style profile selected:
+- Competing profile considered:
+- Why the primary profile applies:
+- Overlay applied:
+- Profile sources kept private: yes / exception documented
+- Must preserve:
+- Must remove:
+- Authorized humor level:
+- Authorized informality or profanity level:
+- Claims allowed or forbidden:
+- Privacy boundary:
+- Contamination checks:
+  - [ ] Correct audience and profile
+  - [ ] No private leakage
+  - [ ] No unsupported claims or inferred intent
+  - [ ] No generic filler or false warmth
+  - [ ] No unauthorized promotional pressure
+  - [ ] Meaning preserved
+- Output status:
+- Agent 004 review status:
+- Human review status:
+- Patch or calibration note:
+- Provenance references:
+

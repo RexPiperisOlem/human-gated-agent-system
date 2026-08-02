@@ -1,0 +1,30 @@
+{
+  "warning": "Fictional examples only. Store real personal or brand profiles outside the repository.",
+  "profiles": {
+    "public_plain": {
+      "audience": "general public",
+      "purpose": "clear factual explanation",
+      "preserve": ["specific evidence", "plain language", "short paragraphs"],
+      "avoid": ["unsupported claims", "fake intimacy", "promotional pressure"]
+    },
+    "formal_evidence": {
+      "audience": "reviewer or decision maker",
+      "purpose": "fact, evidence, impact, request",
+      "preserve": ["dates", "source references", "clear requested action"],
+      "avoid": ["speculation", "rhetorical exaggeration", "unverified legal conclusions"]
+    },
+    "catalog_neutral": {
+      "audience": "collection viewer",
+      "purpose": "identify and describe an object",
+      "preserve": ["visible facts", "known creator or source", "uncertainty labels"],
+      "avoid": ["invented intent", "market value", "sentimental narrative"]
+    },
+    "internal_notes": {
+      "audience": "project team",
+      "purpose": "fast operational capture",
+      "preserve": ["open questions", "constraints", "next decision"],
+      "avoid": ["public-ready polish", "hidden assumptions", "external commitments"]
+    }
+  }
+}
+

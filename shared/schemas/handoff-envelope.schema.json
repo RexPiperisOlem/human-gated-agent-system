@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/handoff-envelope.schema.json",
+  "title": "Human-Gated Agent Handoff Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "created_at",
+    "source_agent",
+    "target_agent",
+    "status",
+    "gate",
+    "purpose",
+    "inputs",
+    "output_contract",
+    "risks",
+    "human_decision",
+    "provenance",
+    "payload"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source_agent": { "type": "string", "pattern": "^(00[1-9]|01[0-2])$" },
+    "target_agent": { "type": "string", "pattern": "^(00[1-9]|01[0-2])$" },
+    "status": {
+      "enum": ["CAPTURED", "TRIAGED", "DRAFT", "READY", "IN_PROGRESS", "UNDER_REVIEW", "ACCEPTED", "HELD", "REJECTED", "SUPERSEDED", "ARCHIVED"]
+    },
+    "gate": { "enum": ["INTERNAL", "REVIEW", "ACTION", "BLOCKED"] },
+    "purpose": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "reference", "required"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "reference": { "type": "string", "minLength": 1 },
+          "required": { "type": "boolean" }
+        }
+      }
+    },
+    "output_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_deliverable", "acceptance_criteria"],
+      "properties": {
+        "primary_deliverable": { "type": "string", "minLength": 1 },
+        "acceptance_criteria": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "risks": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "human_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status", "owner_role", "decision_note"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "enum": ["PENDING", "APPROVED", "REJECTED", "NOT_REQUIRED"] },
+        "owner_role": { "type": "string", "minLength": 1 },
+        "decision_note": { "type": "string" }
+      }
+    },
+    "provenance": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "payload": { "type": "object" }
+  }
+}
+

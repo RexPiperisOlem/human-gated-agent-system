@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "agents": [
+    {
+      "id": "001",
+      "name": "System Orchestrator",
+      "primary_output": "Dispatch record",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012"]
+    },
+    {
+      "id": "002",
+      "name": "Intake and Triage",
+      "primary_output": "Intake card",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "003", "005"]
+    },
+    {
+      "id": "003",
+      "name": "Work Order Designer",
+      "primary_output": "Executable work order",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "007", "008", "009", "010", "011", "012"]
+    },
+    {
+      "id": "004",
+      "name": "Quality and Evidence Gate",
+      "primary_output": "Review decision and repair list",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "003", "005", "012"]
+    },
+    {
+      "id": "005",
+      "name": "Index and Provenance Recorder",
+      "primary_output": "Index update packet",
+      "default_gate": "INTERNAL",
+      "allowed_targets": ["001", "006"]
+    },
+    {
+      "id": "006",
+      "name": "Controlled Change Agent",
+      "primary_output": "Patch proposal",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005"]
+    },
+    {
+      "id": "007",
+      "name": "Collection Intake",
+      "primary_output": "Object record",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005", "008"]
+    },
+    {
+      "id": "008",
+      "name": "Digital Capture Control",
+      "primary_output": "Capture record",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005", "009"]
+    },
+    {
+      "id": "009",
+      "name": "Preservation Planning",
+      "primary_output": "Storage and handling plan",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005", "010"]
+    },
+    {
+      "id": "010",
+      "name": "Retention and Release Gate",
+      "primary_output": "Controlled disposition decision",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005", "011"]
+    },
+    {
+      "id": "011",
+      "name": "Public Description Builder",
+      "primary_output": "Fact-grounded public copy draft",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "004", "005", "012"]
+    },
+    {
+      "id": "012",
+      "name": "Voice and Style Router",
+      "primary_output": "Routed and style-checked text",
+      "default_gate": "REVIEW",
+      "allowed_targets": ["001", "003", "004", "005"]
+    }
+  ]
+}
+
