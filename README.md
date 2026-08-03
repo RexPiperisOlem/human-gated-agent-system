@@ -76,3 +76,12 @@ The public reference system is complete enough to study, adapt privately, and te
 ## License status
 
 This repository is source-available for inspection under the included restrictive notice. No permission to copy, modify, distribute, or sell is granted unless the repository owner replaces `LICENSE` with a chosen license.
+
+## About the builder
+
+This system was designed, written, tested, and prepared for public release by **Roger Crosby**. It is the flagship public example of his work in human-gated artificial-intelligence architecture, operational documentation, structured handoffs, evidence-based quality control, and approval design.
+
+Roger is available for remote contract work and project-based collaboration involving artificial-intelligence evaluation, agent workflows, documentation systems, operational writing, and human-oversight design.
+
+Contact: [info@paranoidpeoplelivelonger.com](mailto:info@paranoidpeoplelivelonger.com)  
+Portfolio: [PPLL Signal Archive](https://github.com/RexPiperisOlem/PPLL-Signal-Archive)
