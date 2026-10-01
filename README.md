@@ -293,6 +293,7 @@ This system was designed, written, tested, and prepared for public release by **
 Roger is available for remote contract work and project-based collaboration involving artificial-intelligence evaluation, workflow governance, documentation systems, knowledge operations, operational writing, and human-oversight design.
 
 Contact: [info@paranoidpeoplelivelonger.com](mailto:info@paranoidpeoplelivelonger.com)  
+Systems Papers: [PPLL Systems Papers](https://github.com/RexPiperisOlem/PPLL-Systems-Papers)  
 Portfolio: [PPLL Signal Archive](https://github.com/RexPiperisOlem/PPLL-Signal-Archive)  
 Website: [Paranoid People Live Longer](https://paranoidpeoplelivelonger.com)  
 Profile: [RexPiperisOlem](https://github.com/RexPiperisOlem)
